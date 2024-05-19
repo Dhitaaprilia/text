@@ -3,7 +3,7 @@ import streamlit as st
 import joblib
 import pandas as pd
 
-st.header("Klasifikasi Artikel Berita Dengan Reduksi Dimensi", divider='rainbow')
+st.header("Klasifikasi Artikel Berita", divider='rainbow')
 text = st.text_area("Masukkan Artikel Berita")
 
 button = st.button("Submit")
@@ -17,11 +17,11 @@ if button:
     tfidf_matrics = vectorizer.transform([text]).toarray()
     
     # Predict Model Naive Bayes Reduksi
-    model_reduksi = joblib.load("nb (1).pkl")
-    lda = joblib.load("lda (1).pkl")
-    lda_transform = lda.transform(tfidf_matrics)
-    prediction_reduksi = model_reduksi.predict(lda_transform)
-    st.session_state.nb_reduksi = prediction_reduksi[0]
+    #model_reduksi = joblib.load("nb (1).pkl")
+    #lda = joblib.load("lda (1).pkl")
+    #lda_transform = lda.transform(tfidf_matrics)
+    #prediction_reduksi = model_reduksi.predict(lda_transform)
+    #st.session_state.nb_reduksi = prediction_reduksi[0]
     
     # Predict Model Naive Bayes Tanpa Reduksi
     model_asli = joblib.load("NaiveBayes.pkl")
