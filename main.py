@@ -30,7 +30,7 @@ if button:
 
 selected = option_menu(
   menu_title="",
-  options=["Dataset Information", "History Uji Coba" ,"Klasifikasi"],
+  options=["Dataset Information","Klasifikasi"],
   icons=["data", "Process", "model", "implemen", "Test", "sa"],
   orientation="horizontal"
   )
@@ -45,6 +45,6 @@ if selected == "Dataset Information":
 elif selected == "Klasifikasi":
   st.write(f"Prediction Category : {st.session_state.nb_asli}")
         
-elif selected == "History Uji Coba":
-    st.write("Hasil Uji Coba")
-    st.dataframe(pd.read_csv('history_data.csv'), use_container_width=True)
+#elif selected == "History Uji Coba":
+    #st.write("Hasil Uji Coba")
+    #st.dataframe(pd.read_csv('history_data.csv'), use_container_width=True)
