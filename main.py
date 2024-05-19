@@ -36,10 +36,10 @@ selected = option_menu(
   )
 
 if selected == "Dataset Information":
-    st.write("Dataset Asli")
-    st.dataframe(pd.read_csv('dataset_detik_uas.csv'), use_container_width=True)
-    st.write("Dataset Hasil Reduksi Dimensi")
-    st.dataframe(pd.read_csv('reduksi_dimensi.csv'), use_container_width=True)
+    #st.write("Dataset Asli")
+    st.dataframe(pd.read_csv('dataset_detik_combine.csv'), use_container_width=True)
+    #st.write("Dataset Hasil Reduksi Dimensi")
+    #st.dataframe(pd.read_csv('reduksi_dimensi.csv'), use_container_width=True)
 
 
 elif selected == "Klasifikasi":
