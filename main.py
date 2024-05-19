@@ -4,6 +4,13 @@ import joblib
 import pandas as pd
 
 st.header("Klasifikasi Artikel Berita", divider='rainbow')
+st.subheader("Oleh Anggota Kelompok 4 :")
+st.write("1. Silvia Rahmawati Avrelia ( 20-062 )")
+st.write("2. Dhita Aprilia Dhamayanti ( 20-102 )")
+st.write("3. Annisa Putri Pawestri ( 20-110 )")
+st.write("4. Citra Indah Lestari ( 20-202 )")
+st.write("-------------------------------------------------------------------------------------------------------------------------")
+
 text = st.text_area("Masukkan Artikel Berita")
 
 button = st.button("Submit")
